@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.client/home.client.iml" filepath="$PROJECT_DIR$/.idea/modules/home.client/home.client.iml" group="home.client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.client/home.client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.client/home.client_main.iml" group="home.client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.client/home.client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.client/home.client_test.iml" group="home.client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.controller/home.controller.iml" filepath="$PROJECT_DIR$/.idea/modules/home.controller/home.controller.iml" group="home.controller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.controller/home.controller_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.controller/home.controller_main.iml" group="home.controller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.controller/home.controller_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.controller/home.controller_test.iml" group="home.controller" />
+      <module fileurl="file://$PROJECT_DIR$/home.parent.iml" filepath="$PROJECT_DIR$/home.parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.parent_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.parent_main.iml" group="home.parent" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.parent_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.parent_test.iml" group="home.parent" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.stand/home.stand.iml" filepath="$PROJECT_DIR$/.idea/modules/home.stand/home.stand.iml" group="home.stand" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.stand/home.stand_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.stand/home.stand_main.iml" group="home.stand" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.stand/home.stand_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.stand/home.stand_test.iml" group="home.stand" />
+    </modules>
+  </component>
+</project>
