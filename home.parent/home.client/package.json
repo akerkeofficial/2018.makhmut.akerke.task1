@@ -8,7 +8,8 @@
     "gulp_less": "gulp less",
     "gulp_pug": "gulp pug",
     "gulp_ser": "gulp ser",
-    "gulp_par": "gulp par"
+    "gulp_par": "gulp par",
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@angular/compiler": "4.4.3",
     "@angular/core": "4.4.3",
     "@angular/forms": "4.4.3",
+    "@angular/router"
     "@angular/http": "4.4.3",
     "@angular/material": "2.0.0-beta.11",
     "@angular/platform-browser": "4.4.3",

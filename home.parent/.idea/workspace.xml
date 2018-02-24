@@ -52,10 +52,25 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="home.parent" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.component.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
@@ -64,21 +79,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home.client/package.json">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="255">
+              <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home.client/gulpfile.js">
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.client/front/pug/index.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.client/build/public/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -91,8 +126,21 @@
       <list>
         <option value="FxmlFile" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>module</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/home.client/front</dir>
+    </dirStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -183,6 +231,16 @@
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Download and install a local node/npm version." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="nodeSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs 'npm install gulp' to install gulp" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installGulp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javadoc" />
@@ -248,6 +306,11 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of npm to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="npmSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'home.parent'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
@@ -278,9 +341,24 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Install node packages from package.json." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="npmInstall" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Install node packages using Yarn." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="yarn" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'home.parent'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of Yarn to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="yarnSetup" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -322,6 +400,16 @@
                 <option name="description" value="Assembles test classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
                 <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Download and install a local node/npm version." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
+                <option name="name" value="nodeSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs 'npm install gulp' to install gulp" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
+                <option name="name" value="installGulp" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
@@ -384,6 +472,11 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of npm to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
+                <option name="name" value="npmSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':home.client'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
                 <option name="name" value="dependencies" />
@@ -414,9 +507,24 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Install node packages from package.json." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
+                <option name="name" value="npmInstall" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Install node packages using Yarn." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
+                <option name="name" value="yarn" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':home.client'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
                 <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of Yarn to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/home.client" />
+                <option name="name" value="yarnSetup" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -697,11 +805,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7584356438000" />
+        <entry key="$PROJECT_DIR$" value="7591205950000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3968949682" />
-        <entry key="$PROJECT_DIR$/home.client/build.gradle" value="3446828563" />
-        <entry key="$PROJECT_DIR$/home.controller/build.gradle" value="3446828563" />
-        <entry key="$PROJECT_DIR$/home.stand/build.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/home.client/build.gradle" value="1034409699" />
+        <entry key="$PROJECT_DIR$/home.controller/build.gradle" value="3564012912" />
+        <entry key="$PROJECT_DIR$/home.stand/build.gradle" value="2176810046" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1280684619" />
       </map>
     </option>
@@ -722,6 +830,12 @@
                   <entry key="$PROJECT_DIR$/home.client">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.moowork.gradle/gradle-node-plugin/1.1.1/b759df44f7f8bae2fc081816b472bb08d9874e97/gradle-node-plugin-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.moowork.gradle/gradle-node-plugin/1.1.1/43922f22bc6e01127405b3f574c45581d3d71c34/gradle-node-plugin-1.1.1.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$/home.client" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -844,14 +958,47 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/home.client/build.gradle" />
-        <option value="$PROJECT_DIR$/home.controller/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/home.client/web/ht/pug.html" />
         <option value="$PROJECT_DIR$/home.client/web/ht/htm.pug" />
-        <option value="$PROJECT_DIR$/home.client/package.json" />
         <option value="$PROJECT_DIR$/home.client/front/less/asd.less" />
+        <option value="$PROJECT_DIR$/home.client/front/pug/dsa.pug" />
+        <option value="$PROJECT_DIR$/home.client/front/pug/_bootstrap_head.pug" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/provider/HttpService.ts" />
+        <option value="$PROJECT_DIR$/home.controller/build.gradle" />
+        <option value="$PROJECT_DIR$/home.controller/src/main/java/kz/greetgo/home/Asd.java" />
+        <option value="$PROJECT_DIR$/home.controller/src/main/java/kz/greetgo/home/controller/Asd.java" />
+        <option value="$PROJECT_DIR$/home.client/build.gradle" />
+        <option value="$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/StandBeanContainer.java" />
+        <option value="$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/Asd.java" />
+        <option value="$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/bean_containres/StandBeanContainer.java" />
+        <option value="$PROJECT_DIR$/home.stand/build.gradle" />
+        <option value="$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/utils/Modules.java" />
+        <option value="$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/launcher/StandLauncher.java" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/Hero.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero.component.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero-form/hero-component.component.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero-form/hero-form.component.html" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero-form/hero-form.component.ts" />
         <option value="$PROJECT_DIR$/home.client/gulpfile.js" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero-detail/hero-detail.component.html" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/hero-detail/hero-detail.component.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/login.component.html" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/provider/main.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/main.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/main.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/login/index.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/home.client/build/public/home/css/main.css" />
+        <option value="$PROJECT_DIR$/home.client/build/public/home/index.html" />
+        <option value="$PROJECT_DIR$/home.client/front/pug/index.pug" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/app.component.css" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/app.component.html" />
+        <option value="$PROJECT_DIR$/home.client/front/ts/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/home.client/package.json" />
       </list>
     </option>
   </component>
@@ -864,27 +1011,29 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/home.client/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="45" />
-    <option name="width" value="1280" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="53" />
+    <option name="y" value="23" />
+    <option name="width" value="1227" />
     <option name="height" value="708" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
+      <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="false" />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="true" />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="false" />
+      <sortByType ProjectPane="false" />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -901,40 +1050,66 @@
               <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="pug" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ht" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="ts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home.parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="home.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="home.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="ts" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -942,6 +1117,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/home.client/front/ts/provider" />
+      <recent name="$PROJECT_DIR$/home.client/front/ts/app" />
+      <recent name="$PROJECT_DIR$/home.client/front/ts/app/hero-detail" />
+      <recent name="$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/utils" />
+      <recent name="$PROJECT_DIR$/home.controller/src/main/java/kz/greetgo/home/controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1056,15 +1241,23 @@
       <workItem from="1517565015186" duration="5062000" />
       <workItem from="1517570509465" duration="1581000" />
       <workItem from="1517990585933" duration="230000" />
-      <workItem from="1518066979470" duration="666000" />
+      <workItem from="1518066979470" duration="1017000" />
+      <workItem from="1518163469993" duration="4455000" />
+      <workItem from="1518175087314" duration="695000" />
+      <workItem from="1518767985255" duration="11310000" />
+      <workItem from="1519312350477" duration="2955000" />
+      <workItem from="1519315522496" duration="30000" />
+      <workItem from="1519373814135" duration="6609000" />
+      <workItem from="1519478988027" duration="148000" />
+      <workItem from="1519479160400" duration="5581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9516000" />
+    <option name="totallyTimeSpent" value="41650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="45" width="1280" height="708" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="708" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1072,22 +1265,23 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23559321" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23050848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23559321" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23263328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23182553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="500" y="82" width="279" height="590" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23973727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23909532" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1108,113 +1302,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/front/less/asd.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.controller/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.stand/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.stand/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1236,43 +1323,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.stand/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.controller/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/build/public/blog/asd.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/build/public/blog/asd.css" />
     <entry file="file://$PROJECT_DIR$/home.client/web/ht/pug.html" />
     <entry file="file://$PROJECT_DIR$/home.client/build/private/blog/htm.html" />
-    <entry file="file://$PROJECT_DIR$/home.client/web/ht/htm.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.client/front/less/asd.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1280,7 +1333,238 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/web/ht/htm.pug" />
+    <entry file="file://$PROJECT_DIR$/home.client/front/pug/dsa.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/pug/_page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/pug/_no_cache.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/pug/_bootstrap_head.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/build/public/home/main.css" />
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/providers/HttpService.ts" />
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/provider/HttpService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/Asd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.controller/src/main/java/kz/greetgo/home/controller/Asd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.controller/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/bean_containres/StandBeanContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.stand/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/launcher/StandLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.stand/src/main/java/kz/greetgo/home/stand/utils/Modules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/hero.component.ts" />
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/hero-form/hero-component.component.ts" />
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/hero-form/hero-form.component.html" />
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/hero-form/hero-form.component.ts" />
     <entry file="file://$PROJECT_DIR$/home.client/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/Hero.ts" />
+    <entry file="file://$PROJECT_DIR$/home.client/build/public/home/js/zone.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/hero-detail/hero-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/hero-detail/hero-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/build/public/home/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/src/app/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/src/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#73#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/login/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/build/public/home/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/build/public/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
@@ -1288,19 +1572,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.client/package.json">
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/pug/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.client/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="1121">
+          <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.client/front/ts/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
