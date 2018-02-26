@@ -1,3 +1,7 @@
-.form{
-    background: red;
+body{
+    position: relative;
+    top:100px;
+}
+.panel-title {
+    text-align:center;
 }
