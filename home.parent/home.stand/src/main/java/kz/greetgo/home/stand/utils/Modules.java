@@ -17,7 +17,7 @@ public class Modules {
       File dir = new File(moduleName);
       try {
         if (dir.isDirectory() &&
-            dir.toPath().resolve("..").toFile().getCanonicalFile().getName().equals("education.parent")) {
+            dir.toPath().resolve("..").toFile().getCanonicalFile().getName().equals("home.parent")) {
           return dir;
         }
       } catch (IOException e) {
