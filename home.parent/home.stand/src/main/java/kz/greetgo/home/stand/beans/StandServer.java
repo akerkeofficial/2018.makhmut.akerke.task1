@@ -14,7 +14,7 @@ import java.util.List;
 @Bean
 public class StandServer  implements HasAfterInject{
 
-    public final Server server = new Server(8000);
+    public final Server server = new Server(2000);
 
     public StandServer start() throws Exception {
         server.start();

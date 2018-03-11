@@ -21,6 +21,4 @@ public class StandLauncher   {
 
         standBeanContainer.standServer().start();
    }
-
-
 }
