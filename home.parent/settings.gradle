@@ -1,3 +1,4 @@
 include 'home.client'
 include 'home.controller'
 include 'home.stand'
+include 'home.register'

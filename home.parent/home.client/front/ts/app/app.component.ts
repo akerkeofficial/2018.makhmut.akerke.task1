@@ -5,8 +5,10 @@ import "rxjs/add/operator/toPromise";
 
 @Component({
     selector:"home_app",
-    template: `{{text}}`
-    //styles: [require('./app.component.css')]
+    // template: `{{text}}`
+
+    template: require('./app.component.html'),
+    styles: [require('./app.component.css')]
 })
 export class AppComponent implements OnInit {
     private text:string;
