@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {HttpService} from "../../provider/HttpService";
 
 @Component({
     selector: 'login_app',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 
 export class LoginComponent implements OnInit {
     public text:string="sdasd";
-    constructor(private router:Router) { }
+    constructor(private router:Router, private httpService:HttpService) { }
 
     ngOnInit() {
 
@@ -20,23 +21,16 @@ export class LoginComponent implements OnInit {
         var username = e.target.elements[0].value;
         var password = e.target.elements[1].value;
         console.log(username,password);
+        this.httpService.post("/login",{username:username, password:password}).toPromise().then(
+            result =>{
+                console.log(result);
+                this.text=result.json().text;
+                this.router.navigate([this.text]);
+            },
+            error =>{
+                this.text="Something is wrong";
 
-        if (username == 'admin' && password == 'admin123') {
-            this.router.navigate(['authenticated']);
-        }
-        else if (username == 'admin1' && password == 'admin123') {
-            this.router.navigate(['authenticated']);
-        }
-        else if (username == 'admin2' && password == 'admin123') {
-            this.router.navigate(['authenticated']);
-        }
-        else if (username == 'admin3' && password == 'admin123') {
-            this.router.navigate(['authenticated']);
-        }
-        else if (username == 'admin4' && password == 'admin123') {
-            this.router.navigate(['authenticated']);
-        }
-        else     console.log(username+"=fail");
-
+            }
+        )
     }
 }

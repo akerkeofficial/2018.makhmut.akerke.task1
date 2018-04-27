@@ -1,0 +1,50 @@
+apply plugin: 'war'
+webAppDirName = 'webapps'
+
+configurations { providedCompile }
+
+dependencies {
+  compile project(':home.server')
+
+  compile 'jstl:jstl:1.2'
+
+  testCompile "kz.greetgo.depinject:greetgo.depinject.gen:$greetgoDepInjectVersion"
+}
+
+task generateBeanContainerJavas(type: JavaExec) {
+  ext.genDir = "${project.buildDir}/generated/bean_container_impl"
+//  dependsOn autoimplJar
+
+  main = 'kz.greetgo.home.war.GenerateAndCompileBeanContainers'
+  args = ["${genDir}"]
+
+  classpath { [sourceSets.test.runtimeClasspath,] }
+}
+
+task beanContainerJar(type: Jar) {
+  dependsOn generateBeanContainerJavas
+  baseName "home-bean-container"
+  from generateBeanContainerJavas.genDir
+}
+
+war {
+  dependsOn project(':home.client').build
+  dependsOn beanContainerJar
+
+  doFirst {
+//    println(project(':sandbox.client').buildDir.toPath().resolve('product').toFile())
+  }
+
+  baseName 'home'
+
+  addExcludes rootSpec
+
+  classpath beanContainerJar
+
+  from project(':home.client').buildDir.toPath().resolve('public').toFile()
+}
+
+static def addExcludes(rootSpec) {
+  rootSpec.exclude 'ant-*.jar'
+  rootSpec.exclude 'ant-launcher-*.jar'
+}

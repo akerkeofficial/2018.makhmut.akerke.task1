@@ -1,57 +1,66 @@
-const gulp = require("gulp");
-const task = gulp.task;
-const del = require("del");
-const less = require("gulp-less");
-const path =require("path");
+'use strict';
+
+const gulp = require('gulp');
 const ser = gulp.series;
 const par = gulp.parallel;
-const pug = require("gulp-pug");
+const task = gulp.task;
+const del = require('del');
+const less = require('gulp-less');
+const path = require('path');
+const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 const webpack = require('webpack');
 const gulpLog = require('gulplog');
 const notifier = require('node-notifier');
+const rename = require('gulp-rename');
 
 let isWatch = true;
 
 function outDir() {
-    return path.resolve(__dirname, 'build','public','home');
+    return path.resolve(__dirname, 'build', 'public', 'home');
 }
-gulp.task('clean', function () {
+
+task('clean', function () {
     return del(['build']);
 });
 
-// gulp.task('less',function () {
-//     return gulp.src('front/less/*.less').pipe(less()).
-//     pipe(gulp.dest(path.resolve(__dirname, 'build',
-//         'public', 'blog')))
-// });
-//
-// gulp.task('pug',function () {
-//     return gulp.src('web/ht/*.pug').pipe(pug()).
-//     pipe(gulp.dest(path.resolve(__dirname, 'build',
-//         'public', 'blog')))
-// });
-
-gulp.task('less', function () {
-    return gulp.src("front/less/main.less").pipe(less()).pipe(gulp.dest(path.resolve(outDir(),'css')))
-});
-
-gulp.task('pug', function () {
-    return gulp.src("front/pug/index.pug").pipe(pug({pretty: true}))
-        .on("error", console.log)
-        .pipe(gulp.dest(outDir()))
-});
-
-gulp.task('copy', function () {
+task('copy', function () {
     return gulp.src([
         "node_modules/zone.js/dist/zone.min.js",
         "node_modules/core-js/client/shim.min.js"
     ]).pipe(gulp.dest(path.resolve(outDir(), 'js')));
 });
 
-gulp.task('assets', ser('less','pug'));
+task('less', function () {
+    return gulp.src("front/less/main.less").pipe(less()).
+    pipe(gulp.dest(path.resolve(outDir(), 'css')));
+});
 
-gulp.task('webpack', function (callback) {
+task('pug', function () {
+    return gulp.src("front/pug/index.pug").pipe(pug({pretty: true}))
+        .on("error", console.log)
+        .pipe(gulp.dest(outDir()));
+});
+
+task('pug_main', function () {
+    return gulp.src("front/pug/index_main.pug").pipe(pug({pretty: true}))
+        .on("error", console.log)
+        .pipe(rename(function (path) {
+            ['_main'].forEach(e => {
+                if (path.basename.endsWith(e)) {
+                    path.basename = path.basename.slice(0, -e.length);
+                }
+            });
+        }))
+        .pipe(gulp.dest(outDir()));
+});
+
+
+task('assets', ser('less', 'pug'));
+
+task('assets_main', ser('less', 'pug_main'));
+
+task('webpack', function (callback) {
 
     let options = {
         entry: [path.resolve('.', 'front', 'ts', 'main.ts')],
@@ -68,9 +77,9 @@ gulp.task('webpack', function (callback) {
                 test: /\.ts$/,
                 include: path.resolve(__dirname, 'front', 'ts'),
                 loader: ['ts-loader'],
-            }, {
-                test: /\.(html|css)$/,
-                loader : 'raw-loader',
+            },{
+                test:/\.(html|css)$/,
+                loader: 'raw-loader'
             }],
         },
         resolve: {
@@ -110,15 +119,22 @@ gulp.task('webpack', function (callback) {
     });
 });
 
-gulp.task('server', function (back) {
-    browserSync.init({server: path.resolve('build', 'public','home')});
+task('build', ser(
+    'clean', 'copy', function (callback) {
+        isWatch = false;
+        callback();
+    }, "webpack", "assets_main"
+));
+
+task('server', function (back) {
+    browserSync.init({server: path.resolve('build', 'public', 'home')});
 
     browserSync.watch('build/public/**/*.*').on('change', browserSync.reload);
 
     back();
 });
 
-gulp.task('start', ser(
+task('start', ser(
     'clean', 'assets', 'copy', function (callback) {
         isWatch = true;
         callback();
@@ -128,11 +144,3 @@ gulp.task('start', ser(
         gulp.watch('front/less/**/*.less', ser('less'));
     }
 ));
-// gulp.task('ser', gulp.series('clean','pug','less'));         //на уроке
-
-// gulp.task('par',gulp.series('clean',gulp.parallel('pug','less')));       //ну уроке
-
-gulp.task('ser', gulp.series('clean')); // a task
-gulp.task('par',gulp.parallel('pug','less')); // b task
-gulp.task('par',gulp.series('clean',gulp.parallel('pug','less'))); // c task
-

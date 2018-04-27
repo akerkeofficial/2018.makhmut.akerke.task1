@@ -11,12 +11,18 @@
       <module fileurl="file://$PROJECT_DIR$/home.parent.iml" filepath="$PROJECT_DIR$/home.parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.parent_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.parent_main.iml" group="home.parent" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.parent_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.parent_test.iml" group="home.parent" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.register/home.register.iml" filepath="$PROJECT_DIR$/.idea/modules/home.register/home.register.iml" group="home.register" />
+      <module fileurl="file://$PROJECT_DIR$/home.register/home.register.iml" filepath="$PROJECT_DIR$/home.register/home.register.iml" group="home.register" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.register/home.register_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.register/home.register_main.iml" group="home.register" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.register/home.register_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.register/home.register_test.iml" group="home.register" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.server/home.server.iml" filepath="$PROJECT_DIR$/.idea/modules/home.server/home.server.iml" group="home.server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.server/home.server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.server/home.server_main.iml" group="home.server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.server/home.server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.server/home.server_test.iml" group="home.server" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.stand/home.stand.iml" filepath="$PROJECT_DIR$/.idea/modules/home.stand/home.stand.iml" group="home.stand" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.stand/home.stand_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.stand/home.stand_main.iml" group="home.stand" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.stand/home.stand_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.stand/home.stand_test.iml" group="home.stand" />
+      <module fileurl="file://$PROJECT_DIR$/home.war/home.war.iml" filepath="$PROJECT_DIR$/home.war/home.war.iml" group="home.war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.war/home.war_main.iml" filepath="$PROJECT_DIR$/.idea/modules/home.war/home.war_main.iml" group="home.war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home.war/home.war_test.iml" filepath="$PROJECT_DIR$/.idea/modules/home.war/home.war_test.iml" group="home.war" />
     </modules>
   </component>
 </project>

@@ -7,11 +7,12 @@ import {HttpService} from "../provider/HttpService";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
+import {APP_BASE_HREF} from "@angular/common";
 
 const appRoutes:Routes = [
     {
 
-        path: '',
+        path: 'home',
         component: LoginComponent
     },
     {
@@ -25,7 +26,8 @@ const appRoutes:Routes = [
         HttpModule,
         RouterModule.forRoot(appRoutes)
     ],
-    providers:[HttpService],
+
+    providers:[HttpService, {provide: APP_BASE_HREF, useValue: '/home'}],
     declarations:[
         AppComponent,
         LoginComponent,
