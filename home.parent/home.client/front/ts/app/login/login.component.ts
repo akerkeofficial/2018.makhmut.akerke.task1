@@ -4,7 +4,8 @@ import {HttpService} from "../../provider/HttpService";
 
 @Component({
     selector: 'login_app',
-    template: require('./login.component.html')
+    template: require('./login.component.html'),
+    styles: [require('./login.component.css')]
 })
 
 export class LoginComponent implements OnInit {

@@ -15,7 +15,7 @@ public class TestClassForTest {
             = new HashMap<>();
 
     static {
-        dbLogin.put("seyit","111");
+        dbLogin.put("akerke","111");
     }
 
     private String getPassword(String login){
@@ -38,10 +38,10 @@ public class TestClassForTest {
         //assertion
         dbLogin.clear();
         logger.info("clear db");
-        dbLogin.put("seyit","123");
+        dbLogin.put("akerke","123");
         logger.info("add new login");
-        String response = getPassword("seyit");
-        String response2 = getPassword("seyit2");
+        String response = getPassword("akerke");
+        String response2 = getPassword("akerke2");
         logger.info("get password");
 
         Assert.assertEquals(response,"123");
